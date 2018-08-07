@@ -10,7 +10,6 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>jiangdaxianJob-webapp</groupId>
 	<artifactId>jiangdaxianJob-webapp</artifactId>
-	<packaging>war</packaging>
 	
 	<dependencies>
 		<dependency>
@@ -29,6 +28,19 @@
 	
 	<build>
 		<plugins>
+ 			<plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+		
+		
 			<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
